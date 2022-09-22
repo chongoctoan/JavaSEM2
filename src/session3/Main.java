@@ -5,6 +5,15 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
+        Animal a = new Animal();
+        a.run();
+        Dog d = new Dog();
+        d.run();
+        d.eat();
+        BullDog bd = new BullDog();
+        bd.run();
+    }
+    public static void main2(String[] args){
         int[] intarrays = new int[5];
         ArrayList arrayList = new ArrayList();
         arrayList.add(10);
