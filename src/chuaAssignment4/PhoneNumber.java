@@ -1,20 +1,15 @@
 package chuaAssignment4;
 
-
 import java.util.ArrayList;
 
 public class PhoneNumber {
     String name;
     ArrayList<String> phone;
 
-    public PhoneNumber() {
-    }
-
-    public PhoneNumber(String name, String phone) {
+    public PhoneNumber(String name,String phone) {
         this.name = name;
-        this.phone = new ArrayList<>();// chuyen array thanh chuoi
+        this.phone = new ArrayList<>();
         this.phone.add(phone);
-
     }
 
     public String getName() {
@@ -29,7 +24,4 @@ public class PhoneNumber {
         return phone;
     }
 
-    public void setPhone(ArrayList<String> phone) {
-        this.phone = phone;
-    }
 }
