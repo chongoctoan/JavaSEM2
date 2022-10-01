@@ -2,7 +2,7 @@ package session5;
 
 import session4.Human;
 
-public class Student extends Human implements Studentinterface , FptStudentInterface {
+public abstract class Student extends Human implements Studentinterface , FptStudentInterface {
     @Override
     public void run() {
 
@@ -18,8 +18,5 @@ public class Student extends Human implements Studentinterface , FptStudentInter
 
     }
 
-    @Override
-    public void coding() {
 
-    }
 }
