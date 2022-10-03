@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.Controller">
    <children>
-      <TextField layoutX="163.0" layoutY="73.0" promptText="Full Name" />
+      <TextField fx:id="FullName" layoutX="163.0" layoutY="73.0" promptText="Full Name" />
       <Text layoutX="90.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và Tên" />
       <Text layoutX="109.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
       <Text layoutX="109.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuổi" />
       <Text layoutX="102.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ " />
-      <TextField layoutX="163.0" layoutY="124.0" promptText="Email" />
-      <TextField layoutX="163.0" layoutY="175.0" promptText="Age" />
-      <TextField layoutX="163.0" layoutY="223.0" promptText="Address" />
-      <Button layoutX="224.0" layoutY="287.0" mnemonicParsing="false" text="OK" />
+      <TextField fx:id="Email" layoutX="163.0" layoutY="124.0" promptText="Email" />
+      <TextField fx:id="Age" layoutX="163.0" layoutY="175.0" promptText="Age" />
+      <TextField fx:id="Address" layoutX="163.0" layoutY="223.0" promptText="Address" />
+      <Button layoutX="224.0" layoutY="287.0" mnemonicParsing="false" onAction="#handlesubmit" text="OK" />
       <TextArea layoutX="88.0" layoutY="350.0" prefHeight="220.0" prefWidth="427.0" />
-      <Text layoutX="109.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ Và Tên : Chổ Ngọc Toàn" />
-      <Text layoutX="110.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email : chongoctoan@gmail.com" />
-      <Text layoutX="109.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuổi : 22" />
-      <Text layoutX="109.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ : 68 Hàng Đào" />
+      <Text fx:id="txtName" layoutX="109.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" />
+      <Text fx:id="txtEmail" layoutX="110.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" />
+      <Text fx:id="txtAge" layoutX="109.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" />
+      <Text fx:id="txtAddress" layoutX="109.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" />
+      <Text fx:id="noticeFullName" fill="#800d14" layoutX="163.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeEmail" fill="#851424" layoutX="163.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeAge" fill="#820e1f" layoutX="163.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeAddress" fill="#821010" layoutX="163.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
    </children>
 </Pane>
