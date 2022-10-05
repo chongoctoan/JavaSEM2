@@ -1,17 +1,22 @@
 package javafxAssignment1;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
 public class ContactController {
     public TextField txtName;
     public TextField txtPhone;
-    public Text result;
+    public ListView<PhoneNumber> lv;
     public Text errors;
 
-    private ArrayList<PhoneNumber> phoneList = new ArrayList<>();
+    private ObservableList<PhoneNumber> phoneList = FXCollections.observableArrayList();
+    //private ArrayList<PhoneNumber> phoneList = new ArrayList<>();
 
     public void addContact(){
         try {
@@ -43,11 +48,8 @@ public class ContactController {
     }
 
     public void printResult(){
-        String txt = "";
-        for (PhoneNumber p: phoneList){
-            txt += p.toString();
-        }
-        result.setText(txt);
+       lv.setItems(phoneList);
+       lv.refresh();
     }
 
 }
