@@ -5,9 +5,9 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="javafxAssignment1.ContactController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="96.0" layoutY="160.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="OK" />
+      <Button onAction="#addContact" layoutX="96.0" layoutY="160.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="OK" />
       <TextField fx:id="txtName" layoutX="34.0" layoutY="39.0" promptText="Name" />
       <TextField fx:id="txtSDT" layoutX="34.0" layoutY="97.0" promptText="SDT" />
       <Text fx:id="errors" fill="#720b0b" layoutX="34.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />

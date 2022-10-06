@@ -2,6 +2,7 @@ package javafxAssignment1;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -18,7 +19,8 @@ public class ContactController {
     private ObservableList<PhoneNumber> phoneList = FXCollections.observableArrayList();
     //private ArrayList<PhoneNumber> phoneList = new ArrayList<>();
 
-    public void addContact(){
+
+    public void addContact(ActionEvent actionEvent) {
         try {
             errors.setVisible(false);
             if(txtName.getText().isEmpty() || txtPhone.getText().isEmpty()){
@@ -51,5 +53,6 @@ public class ContactController {
        lv.setItems(phoneList);
        lv.refresh();
     }
+
 
 }
